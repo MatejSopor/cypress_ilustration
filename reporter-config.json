@@ -1,0 +1,17 @@
+{
+  "reporterEnabled": "mocha-junit-reporter, mochawesome",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": ".report-results/xml-results/test-[hash].xml",
+    "toConsole": false
+  },
+  "mochawesomeReporterOptions": {
+    "useInlineDiffs": true,
+    "reportDir": ".report-results/partial-results",
+    "reportFilename": "[status]_[datetime]-[name]-report",
+    "timestamp": "longDate",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "toConsole": false
+  }
+}

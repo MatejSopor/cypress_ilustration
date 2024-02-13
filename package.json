@@ -1,0 +1,48 @@
+{
+  "scripts": {
+    "report:clean": "rm -rf .report-results margo-report",
+    "open:ita_int": "cypress open --env configFile=ita:int --e2e --browser electron",
+    "open:ita_qa": "cypress open --env configFile=ita:qa --e2e --browser chrome",
+    "open:ita_uat": "cypress open --env configFile=ita:uat --e2e --browser chrome",
+    "open:cz_int": "cypress open --env configFile=cz:int --e2e --browser chrome",
+    "open:cz_qa": "cypress open --env configFile=cz:qa --e2e --browser chrome",
+    "open:ger_int": "cypress open --env configFile=ger:int --e2e --browser chrome",
+    "open:ger_qa": "cypress open --env configFile=ger:qa --e2e --browser chrome",
+    "open:che_int": "cypress open --env configFile=che:int --e2e --browser electron",
+    "open:che_uat": "cypress open --env configFile=che:uat --e2e --browser chrome",
+    "run:ita_int": "cypress run --env configFile=ita:int --browser electron",
+    "run:ita_qa": "cypress run --env configFile=ita:qa --browser chrome",
+    "run:ita_uat": "cypress run --env configFile=ita:uat --browser chrome",
+    "run:cz/sk_int": "cypress run --env configFile=cz:int,grepTags='@CZSK' --browser chrome",
+    "run:cz/sk_qa": "cypress run --env configFile=cz:qa,grepTags='@CZSK' --browser chrome",
+    "run:ger_int": "cypress run --env configFile=ger:int,grepTags='@GER' --browser chrome",
+    "run:ger_qa": "cypress run --env configFile=ger:qa,grepTags='@GER' --browser chrome"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^4.0.0",
+    "@testing-library/cypress": "^10.0.1",
+    "@types/mochawesome": "^6.2.1",
+    "@walmyr-filho/cy-press": "^1.0.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-junit-reporter": "^1.3.1",
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-real-events": "^1.10.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "axios": "^1.5.0",
+    "cypress": "^13.2.0",
+    "form-data": "^4.0.0",
+    "glob": "^10.3.10",
+    "mocha-junit-reporter": "^2.2.1",
+    "moment": "^2.29.4",
+    "node-xlsx": "^0.23.0",
+    "playwright-webkit": "^1.38.1"
+  },
+  "overrides": {
+    "xlsx": "file:../../packages/xlsx-0.19.3.tgz"
+  }
+}
