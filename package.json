@@ -2,21 +2,7 @@
   "scripts": {
     "report:clean": "rm -rf .report-results margo-report",
     "open:ita_int": "cypress open --env configFile=ita:int --e2e --browser electron",
-    "open:ita_qa": "cypress open --env configFile=ita:qa --e2e --browser chrome",
-    "open:ita_uat": "cypress open --env configFile=ita:uat --e2e --browser chrome",
-    "open:cz_int": "cypress open --env configFile=cz:int --e2e --browser chrome",
-    "open:cz_qa": "cypress open --env configFile=cz:qa --e2e --browser chrome",
-    "open:ger_int": "cypress open --env configFile=ger:int --e2e --browser chrome",
-    "open:ger_qa": "cypress open --env configFile=ger:qa --e2e --browser chrome",
-    "open:che_int": "cypress open --env configFile=che:int --e2e --browser electron",
-    "open:che_uat": "cypress open --env configFile=che:uat --e2e --browser chrome",
     "run:ita_int": "cypress run --env configFile=ita:int --browser electron",
-    "run:ita_qa": "cypress run --env configFile=ita:qa --browser chrome",
-    "run:ita_uat": "cypress run --env configFile=ita:uat --browser chrome",
-    "run:cz/sk_int": "cypress run --env configFile=cz:int,grepTags='@CZSK' --browser chrome",
-    "run:cz/sk_qa": "cypress run --env configFile=cz:qa,grepTags='@CZSK' --browser chrome",
-    "run:ger_int": "cypress run --env configFile=ger:int,grepTags='@GER' --browser chrome",
-    "run:ger_qa": "cypress run --env configFile=ger:qa,grepTags='@GER' --browser chrome"
   },
   "devDependencies": {
     "@cypress/grep": "^4.0.0",
