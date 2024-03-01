@@ -1,4 +1,4 @@
-FROM docker-registry.crifnet.com/margo/dependency/hub.docker.com/cypress/included:13.2.0 AS final-tool
+FROM docker-registry.PATH/cypress/included:13.2.0 AS final-tool
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY ["root/package.json", "./"]
